@@ -23,7 +23,7 @@
     'name': 'Invoice Analysis: Commission Paid Field',
     'summary': "Enable grouping by invoice's commission field",
     'category': 'Invoicing & Payments',
-    'version': '10.0.1.0.0',
+    'version': '10.0.1.0.1',
     'website': 'http://www.tawasta.fi',
     'author': 'Oy Tawasta Technologies Ltd.',
     'license': 'AGPL-3',
