@@ -20,9 +20,8 @@ class AccountInvoiceReport(models.Model):
 
     def _select(self):
         res = super(AccountInvoiceReport, self)._select()
-        string = res + ', sub.business_segment as business_segment, \
+        return res + ', sub.business_segment as business_segment, \
                 sub.business_segment_subsegment as business_segment_subsegment'
-        return string
 
     def _sub_select(self):
         res = super(AccountInvoiceReport, self)._sub_select()
