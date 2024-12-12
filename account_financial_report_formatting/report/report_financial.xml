@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<odoo>
-    <template id="report_financial" inherit_id="account.report_financial">
-        <xpath expr='//span[@t-esc="a.get(&apos;balance_cmp&apos;)"]' position="attributes">
-            <attribute name="t-options">{'widget': 'monetary', 'display_currency': res_company.currency_id}</attribute>
-        </xpath>
-    </template>
-</odoo>
