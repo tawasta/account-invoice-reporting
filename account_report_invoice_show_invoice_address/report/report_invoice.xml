@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template
+        id="report_invoice_document"
+        inherit_id="account.report_invoice_document"
+        priority="20"
+    >
+        <address t-field="o.partner_id" position="before">
+            <strong name="o_invoice_address_text">Invoice address:</strong>
+        </address>
+    </template>
+</odoo>
