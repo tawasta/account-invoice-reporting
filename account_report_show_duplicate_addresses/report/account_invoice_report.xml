@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template
+        id="report_invoice_document_show_duplicate_addresses"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath
+            expr="//t[@t-if='o.partner_shipping_id and (o.partner_shipping_id != o.partner_id)']"
+            position="attributes"
+        >
+            <attribute name="t-if">o.partner_shipping_id</attribute>
+        </xpath>
+    </template>
+</odoo>
