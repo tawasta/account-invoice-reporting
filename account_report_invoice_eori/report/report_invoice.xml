@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="eori_code" name="Report invoice: show EORI code">
+    <div t-if="o.partner_id.eori">
+      EORI: <span name="eori" t-field="o.partner_id.eori" />
+    </div>
+  </template>
+
+  <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+
+    <xpath
+            expr="//div[@id='partner_vat_address_not_same_as_shipping']"
+            position="after"
+        >
+        <t t-call="account_report_invoice_eori.eori_code" />
+    </xpath>
+
+    <xpath expr="//div[@id='partner_vat_address_same_as_shipping']" position="after">
+        <t t-call="account_report_invoice_eori.eori_code" />
+    </xpath>
+
+    <xpath expr="//div[@id='partner_vat_no_shipping']" position="after">
+        <t t-call="account_report_invoice_eori.eori_code" />
+    </xpath>
+  </template>
+</odoo>
