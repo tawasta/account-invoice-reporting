@@ -21,7 +21,7 @@
 {
     "name": "Invoice PDF – Hide payment term under note",
     "summary": "Invoice PDF – Hide payment term under note",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
