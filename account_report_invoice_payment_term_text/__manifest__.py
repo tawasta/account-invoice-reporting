@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Futural Oy
-#    Copyright 2024 Futural Oy (https://futural.fi)
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright 2022 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,9 +19,9 @@
 ##############################################################################
 
 {
-    "name": "Align Invoice PDF report Header fields",
-    "summary": "Align Invoice PDF report Header fields",
-    "version": "17.0.1.0.1",
+    "name": "Invoice pdf print: show Payment terms text on report",
+    "summary": "Show 'Payment terms:' text on Invoice pdf print",
+    "version": "17.0.1.0.0",
     "category": "Account",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
@@ -31,10 +31,5 @@
     "depends": [
         "account",
     ],
-    "data": [],
-    "assets": {
-        "web.report_assets_common": [
-            "account_report_align_header_fields/static/src/scss/template_style.scss",
-        ],
-    },
+    "data": ["report/report_invoice.xml"],
 }

@@ -1,7 +1,7 @@
 ##############################################################################
 #
-#    Author: Futural Oy
-#    Copyright 2024 Futural Oy (https://futural.fi)
+#    Author: Oy Tawasta OS Technologies Ltd.
+#    Copyright 2022 Oy Tawasta OS Technologies Ltd. (https://tawasta.fi)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -19,22 +19,15 @@
 ##############################################################################
 
 {
-    "name": "Align Invoice PDF report Header fields",
-    "summary": "Align Invoice PDF report Header fields",
-    "version": "17.0.1.0.1",
-    "category": "Account",
+    "name": "Account Report Customer contact",
+    "summary": "Show customer contact in invoice PDF",
+    "version": "17.0.1.0.0",
+    "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": [
-        "account",
-    ],
-    "data": [],
-    "assets": {
-        "web.report_assets_common": [
-            "account_report_align_header_fields/static/src/scss/template_style.scss",
-        ],
-    },
+    "depends": ["account", "sale_order_customer_contact"],
+    "data": ["report/report_invoice.xml"],
 }
