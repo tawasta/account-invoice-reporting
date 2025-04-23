@@ -21,7 +21,7 @@
 {
     "name": "Align Invoice PDF report Header fields",
     "summary": "Align Invoice PDF report Header fields",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Account",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
