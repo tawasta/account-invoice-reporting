@@ -1,6 +1,0 @@
-/* Fix issue where bank transfer section contents would
-go over the invoice sum section */
-div#bank_transfer {
-    page-break-inside: avoid;
-    break-inside: avoid-page;
-}
