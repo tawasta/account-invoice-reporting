@@ -30,4 +30,9 @@
     "installable": True,
     "depends": ["account"],
     "data": ["report/report_invoice.xml"],
+    "assets": {
+        "web.report_assets_common": [
+            "account_report_invoice_bank_transfer/static/src/scss/account_invoice_report_style.scss",
+        ],
+    },
 }
