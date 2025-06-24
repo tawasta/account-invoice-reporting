@@ -27,6 +27,7 @@ Contributors
 ------------
 
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
+* Timo Talvitie <timo.talvitie@futural.fi>
 
 Maintainer
 ----------
