@@ -5,19 +5,20 @@
 =====================================
 Account Report Payment Term in Header
 =====================================
+
 * Show payment term in invoice header
 
 Configuration
 =============
-\-
+None needed
 
 Usage
 =====
-\-
+Go to Apps to install the module
 
 Known issues / Roadmap
 ======================
-\-
+Xpath changes may affect other modules that try to modify the same view
 
 Credits
 =======
@@ -26,6 +27,7 @@ Contributors
 ------------
 
 * Miika Nissi <miika.nissi@tawasta.fi>
+* Timo Kekäläinen <timo.kekalainen@tawasta.fi>
 
 
 Maintainer
