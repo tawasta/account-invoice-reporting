@@ -4,7 +4,7 @@
         <xpath expr="//p[@name='payment_communication']" position="attributes">
             <attribute name="t-if">False</attribute>
         </xpath>
-        <xpath expr="//p[@name='payment_communication']" position="after">
+        <xpath expr="//p[@name='payment_communication']/../.." position="after">
             <p
                 t-if="o.move_type in ('out_invoice', 'in_refund') and o.payment_reference"
                 name="payment_communication"
