@@ -21,7 +21,7 @@
 {
     "name": "Account Report Barcode",
     "summary": "Show barcode in invoice PDF",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.0.2",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
