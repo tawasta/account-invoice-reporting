@@ -24,6 +24,7 @@ addon | version | maintainers | summary
 [account_report_invoice_hide_origin](account_report_invoice_hide_origin/) | 17.0.1.0.0 |  | Invoice PDF - Hide origin
 [account_report_invoice_hide_payment_communication](account_report_invoice_hide_payment_communication/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment communication under note
 [account_report_invoice_hide_payment_term_under_note](account_report_invoice_hide_payment_term_under_note/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment term under note
+[account_report_invoice_line_subtotal_with_tax](account_report_invoice_line_subtotal_with_tax/) | 17.0.1.0.0 |  | Include taxes in the subtotal of Invoice PDF print
 [account_report_invoice_payment](account_report_invoice_payment/) | 17.0.1.0.0 |  | Changes 'invoice' to 'receipt' for PDF print and email template
 [account_report_invoice_payment_term_header](account_report_invoice_payment_term_header/) | 17.0.1.0.1 |  | Show payment term in invoice header
 [account_report_invoice_payment_term_text](account_report_invoice_payment_term_text/) | 17.0.1.0.0 |  | Show 'Payment terms:' text on Invoice pdf print

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <xpath expr="//td[@name='td_subtotal']" position="attributes">
+            <attribute name="class">d-none</attribute>
+        </xpath>
+
+        <xpath expr="//td[@name='td_subtotal']" position="before">
+            <td name="td_total" class="text-end o_price_total">
+                <span class="text-nowrap" t-field="line.price_total">27.00</span>
+            </td>
+        </xpath>
+    </template>
+</odoo>
