@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_invoice_with_payments">
+        <t t-call="account.report_invoice">
+            <t t-set="print_with_payments" t-value="True" />
+            <t t-set="report_title">
+                Receipt
+            </t>
+            <t t-set="show_payment_date" t-value="True" />
+        </t>
+    </template>
+
+    <template
+        id="report_account_invoice_document"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//div[@id='payment_term']" position="before">
+            <t t-if="show_payment_date and o.payment_ids">
+                <div id="receipt_date" class="clearfix">
+                    <div class="justify-text">
+                        Paid on:
+                        <span t-esc="o.payment_id.date" />
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>
