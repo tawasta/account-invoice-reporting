@@ -11,17 +11,8 @@ class AccountMove(models.Model):
     barcode = fields.Char(
         "Barcode",
         compute="_compute_barcode",
-        store=True,
-        copy=False,
     )
 
-    @api.depends(
-        "partner_bank_id",
-        "amount_total",
-        "payment_reference",
-        "invoice_date_due",
-        "currency_id",
-    )
     def _compute_barcode(self):
         version = 4
         for record in self:

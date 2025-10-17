@@ -12,8 +12,8 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_report_align_header_fields](account_report_align_header_fields/) | 17.0.1.0.1 |  | Align Invoice PDF report Header fields
-[account_report_invoice_bank_transfer](account_report_invoice_bank_transfer/) | 17.0.1.0.0 |  | Add a bank transfer section for invoices
-[account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.0 |  | Show barcode in invoice PDF
+[account_report_invoice_bank_transfer](account_report_invoice_bank_transfer/) | 17.0.1.0.1 |  | Add a bank transfer section for invoices
+[account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.2 |  | Show barcode in invoice PDF
 [account_report_invoice_business_code](account_report_invoice_business_code/) | 17.0.1.0.0 |  | Show business code in invoice PDF
 [account_report_invoice_customer_contact](account_report_invoice_customer_contact/) | 17.0.1.0.0 |  | Show customer contact in invoice PDF
 [account_report_invoice_delivery_date](account_report_invoice_delivery_date/) | 17.0.1.0.0 |  | Adds Delivery date to invoice PDF print
@@ -24,11 +24,13 @@ addon | version | maintainers | summary
 [account_report_invoice_hide_origin](account_report_invoice_hide_origin/) | 17.0.1.0.0 |  | Invoice PDF - Hide origin
 [account_report_invoice_hide_payment_communication](account_report_invoice_hide_payment_communication/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment communication under note
 [account_report_invoice_hide_payment_term_under_note](account_report_invoice_hide_payment_term_under_note/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment term under note
+[account_report_invoice_line_subtotal_with_tax](account_report_invoice_line_subtotal_with_tax/) | 17.0.1.0.0 |  | Include taxes in the subtotal of Invoice PDF print
 [account_report_invoice_payment](account_report_invoice_payment/) | 17.0.1.0.0 |  | Changes 'invoice' to 'receipt' for PDF print and email template
 [account_report_invoice_payment_term_header](account_report_invoice_payment_term_header/) | 17.0.1.0.1 |  | Show payment term in invoice header
 [account_report_invoice_payment_term_text](account_report_invoice_payment_term_text/) | 17.0.1.0.0 |  | Show 'Payment terms:' text on Invoice pdf print
 [account_report_invoice_quantity_decimals](account_report_invoice_quantity_decimals/) | 17.0.1.0.2 |  | Change the number of decimals shown on invoice PDF product quantities
 [account_report_invoice_reformat](account_report_invoice_reformat/) | 17.0.1.0.0 |  | Reformat invoice print elements for cleaner look
+[account_report_invoice_report_configurator](account_report_invoice_report_configurator/) | 17.0.1.0.0 |  | Central control for all account_report_invoice_* modules
 [account_report_invoice_sale_partner_id](account_report_invoice_sale_partner_id/) | 17.0.1.0.0 |  | Show customer in invoice PDF
 [account_report_invoice_salesperson](account_report_invoice_salesperson/) | 17.0.1.0.1 |  | Show salesperson in invoice PDF
 [account_report_invoice_show_invoice_address](account_report_invoice_show_invoice_address/) | 17.0.1.0.0 |  | Show Invoice address text above Customer info in Invoice PDF print
