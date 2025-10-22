@@ -21,14 +21,18 @@
 {
     "name": "Invoice – Receipt PDF template",
     "summary": "Invoice – Receipt PDF template",
-    "version": "17.0.1.1.1",
+    "version": "17.0.1.1.2",
     "category": "Account",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account_report_invoice_bank_transfer", "web_report_sfs"],
+    "depends": [
+        "account_report_invoice_bank_transfer",
+        "account_report_invoice_barcode",
+        "web_report_sfs",
+    ],
     "data": [
         "report/report_file.xml",
         "report/report_invoice.xml",

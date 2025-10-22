@@ -40,4 +40,13 @@
             <attribute name="t-if">not is_receipt</attribute>
         </p>
     </template>
+
+    <template
+        id="report_account_invoice_document_barcode"
+        inherit_id="account_report_invoice_barcode.report_invoice_document"
+    >
+        <div id="barcode" position="attributes">
+            <attribute name="t-if">not is_receipt</attribute>
+        </div>
+    </template>
 </odoo>
