@@ -3,6 +3,8 @@
     <template id="report_invoice_with_payments">
         <t t-call="account.report_invoice">
             <t t-set="print_with_payments" t-value="True" />
+            <t t-set="is_receipt" t-value="True" />
+
             <t t-set="report_title">
                 Receipt
             </t>
@@ -24,5 +26,13 @@
                 </div>
             </t>
         </xpath>
+
+        <xpath expr="//div[@id='payment_term']" position="attributes">
+            <attribute name="t-if">not is_receipt</attribute>
+        </xpath>
+
+        <p name="payment_communication_info" position="attributes">
+            <attribute name="t-if">not is_receipt</attribute>
+        </p>
     </template>
 </odoo>
