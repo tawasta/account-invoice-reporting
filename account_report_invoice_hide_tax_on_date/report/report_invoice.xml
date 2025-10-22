@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="tax_groups_totals" inherit_id="account.tax_groups_totals">
+        <xpath
+            expr='//span[@t-if="not amount_by_group[&apos;hide_base_amount&apos;]"]'
+            position="attributes"
+        >
+            <attribute name="t-if">False</attribute>
+        </xpath>
+    </template>
+</odoo>
