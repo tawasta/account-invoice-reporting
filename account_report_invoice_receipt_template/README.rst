@@ -2,11 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-================================
-Invoice print with Receipt title
-================================
+==============================
+Invoice – Receipt PDF template
+==============================
 
-Invoice print with Receipt title
+Invoice – Receipt PDF template
 
 Configuration
 =============
