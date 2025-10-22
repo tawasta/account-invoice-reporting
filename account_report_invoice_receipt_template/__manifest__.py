@@ -19,9 +19,9 @@
 ##############################################################################
 
 {
-    "name": "Invoice print with Receipt title",
-    "summary": "Invoice print with Receipt title",
-    "version": "17.0.1.1.0",
+    "name": "Invoice – Receipt PDF template",
+    "summary": "Invoice – Receipt PDF template",
+    "version": "17.0.1.1.1",
     "category": "Account",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
