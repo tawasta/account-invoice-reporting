@@ -27,11 +27,11 @@ addon | version | maintainers | summary
 [account_report_invoice_hide_tax_on_date](account_report_invoice_hide_tax_on_date/) | 17.0.1.0.0 |  | Hides tax on date info on invoice PDF print
 [account_report_invoice_line_subtotal_with_tax](account_report_invoice_line_subtotal_with_tax/) | 17.0.1.0.0 |  | Include taxes in the subtotal of Invoice PDF print
 [account_report_invoice_payment](account_report_invoice_payment/) | 17.0.1.0.0 |  | Changes 'invoice' to 'receipt' for PDF print and email template
-[account_report_invoice_payment_reminder_template](account_report_invoice_payment_reminder_template/) | 17.0.1.0.0 |  | Invoice – Payment reminder PDF template
+[account_report_invoice_payment_reminder_template](account_report_invoice_payment_reminder_template/) | 17.0.1.0.1 |  | Invoice – Payment reminder PDF template
 [account_report_invoice_payment_term_header](account_report_invoice_payment_term_header/) | 17.0.1.0.1 |  | Show payment term in invoice header
 [account_report_invoice_payment_term_text](account_report_invoice_payment_term_text/) | 17.0.1.0.0 |  | Show 'Payment terms:' text on Invoice pdf print
 [account_report_invoice_quantity_decimals](account_report_invoice_quantity_decimals/) | 17.0.1.0.2 |  | Change the number of decimals shown on invoice PDF product quantities
-[account_report_invoice_receipt_template](account_report_invoice_receipt_template/) | 17.0.1.1.2 |  | Invoice – Receipt PDF template
+[account_report_invoice_receipt_template](account_report_invoice_receipt_template/) | 17.0.1.1.3 |  | Invoice – Receipt PDF template
 [account_report_invoice_reformat](account_report_invoice_reformat/) | 17.0.1.0.0 |  | Reformat invoice print elements for cleaner look
 [account_report_invoice_report_configurator](account_report_invoice_report_configurator/) | 17.0.1.0.0 |  | Central control for all account_report_invoice_* modules
 [account_report_invoice_sale_partner_id](account_report_invoice_sale_partner_id/) | 17.0.1.0.0 |  | Show customer in invoice PDF

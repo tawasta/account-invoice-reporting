@@ -21,7 +21,7 @@
 {
     "name": "Invoice – Receipt PDF template",
     "summary": "Invoice – Receipt PDF template",
-    "version": "17.0.1.1.2",
+    "version": "17.0.1.1.3",
     "category": "Account",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
