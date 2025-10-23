@@ -20,6 +20,10 @@
             <attribute name="t-if" separator=" " add="and not is_reminder" />
         </xpath>
 
+        <xpath expr="//div[@name='due_date']" position="attributes">
+            <attribute name="t-if" separator=" " add="and not is_reminder" />
+        </xpath>
+
         <xpath expr="//div[@name='incoterm_id']" position="after">
             <div
                 t-attf-class="#{'col-auto col-3 mw-100' if report_type != 'html' else 'col'} mb-2"
