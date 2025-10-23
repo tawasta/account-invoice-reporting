@@ -30,6 +30,10 @@
         <xpath expr="//div[@id='payment_term']" position="attributes">
             <attribute name="t-if">not is_receipt</attribute>
         </xpath>
+
+        <xpath expr="//div[@name='due_date']" position="attributes">
+            <attribute name="t-if" separator=" " add="and not is_receipt" />
+        </xpath>
     </template>
 
     <template

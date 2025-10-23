@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* account_report_invoice_receipt_title
+# 	* account_report_invoice_receipt_template
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0-20250131\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-17 11:33+0000\n"
-"PO-Revision-Date: 2025-10-17 14:34+0300\n"
+"POT-Creation-Date: 2025-10-23 07:53+0000\n"
+"PO-Revision-Date: 2025-10-23 10:54+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fi_FI\n"
@@ -17,22 +17,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.8\n"
 
-#. module: account_report_invoice_receipt_title
-#: model:ir.actions.report,print_report_name:account_report_invoice_receipt_title.action_report_picking
+#. module: account_report_invoice_receipt_template
+#: model:ir.actions.report,print_report_name:account_report_invoice_receipt_template.action_report_picking
 msgid "(object._get_report_base_filename())"
 msgstr ""
 
-#. module: account_report_invoice_receipt_title
-#: model:ir.actions.report,name:account_report_invoice_receipt_title.action_report_picking
+#. module: account_report_invoice_receipt_template
+#: model:ir.actions.report,name:account_report_invoice_receipt_template.action_report_picking
 msgid "Invoice receipt"
 msgstr "Kuitti"
 
-#. module: account_report_invoice_receipt_title
-#: model_terms:ir.ui.view,arch_db:account_report_invoice_receipt_title.report_account_invoice_document
+#. module: account_report_invoice_receipt_template
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_receipt_template.report_account_invoice_document
 msgid "Paid on:"
 msgstr "Maksettu:"
 
-#. module: account_report_invoice_receipt_title
-#: model_terms:ir.ui.view,arch_db:account_report_invoice_receipt_title.report_invoice_with_payments
+#. module: account_report_invoice_receipt_template
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_receipt_template.report_invoice_with_payments
 msgid "Receipt"
 msgstr "KUITTI"
