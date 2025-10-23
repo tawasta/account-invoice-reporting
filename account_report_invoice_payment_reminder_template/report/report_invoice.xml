@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_invoice_with_payments">
+        <t t-call="account.report_invoice">
+            <t t-set="print_with_payments" t-value="True" />
+            <t t-set="is_reminder" t-value="True" />
+
+            <t t-set="report_title">
+                Payment Reminder
+            </t>
+            <t t-set="show_payment_date" t-value="True" />
+        </t>
+    </template>
+
+    <template
+        id="report_account_invoice_document"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//div[@id='payment_term']" position="attributes">
+            <attribute name="t-if" separator=" " add="and not is_reminder" />
+        </xpath>
+
+        <xpath expr="//div[@name='incoterm_id']" position="after">
+            <div
+                t-attf-class="#{'col-auto col-3 mw-100' if report_type != 'html' else 'col'} mb-2"
+                t-if="is_reminder"
+                name="due_date_now"
+            >
+                <strong>Due Date:</strong><br />
+                <span>IMMEDIATELY</span>
+            </div>
+        </xpath>
+    </template>
+
+    <template
+        id="report_account_invoice_document_bank"
+        inherit_id="account_report_invoice_bank_transfer.report_invoice_document"
+    >
+        <p name="payment_communication_info" position="attributes">
+            <attribute name="t-if" separator=" " add="and not is_reminder" />
+        </p>
+    </template>
+
+    <template
+        id="report_account_invoice_document_barcode"
+        inherit_id="account_report_invoice_barcode.report_invoice_document"
+    >
+        <div id="barcode" position="attributes">
+            <attribute name="t-if" separator=" " add="and not is_reminder" />
+        </div>
+    </template>
+</odoo>
