@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_report_invoice_payment_reminder_template
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250131\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-23 06:45+0000\n"
+"PO-Revision-Date: 2025-10-23 09:46+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#. module: account_report_invoice_payment_reminder_template
+#: model:ir.actions.report,print_report_name:account_report_invoice_payment_reminder_template.action_report_picking
+msgid "(object._get_report_base_filename())"
+msgstr "(object._get_report_base_filename())"
+
+#. module: account_report_invoice_payment_reminder_template
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_payment_reminder_template.report_account_invoice_document
+msgid ""
+"<strong>Due Date:</strong><br/>\n"
+"                <span>IMMEDIATELY</span>"
+msgstr ""
+"<strong>Eräpäivä:</strong><br/>\n"
+"                <span>HETI</span>"
+
+#. module: account_report_invoice_payment_reminder_template
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_payment_reminder_template.report_invoice_with_payments
+msgid "Payment Reminder"
+msgstr "Maksumuistutus"
+
+#. module: account_report_invoice_payment_reminder_template
+#: model:ir.actions.report,name:account_report_invoice_payment_reminder_template.action_report_picking
+msgid "Payment reminder"
+msgstr "Maksumuistutus"
