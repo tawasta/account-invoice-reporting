@@ -1,6 +1,6 @@
 import logging
 
-from odoo import _, api, fields, models
+from odoo import _, fields, models
 
 _logger = logging.getLogger(__name__)
 
@@ -9,7 +9,6 @@ class AccountMove(models.Model):
     _inherit = "account.move"
 
     barcode = fields.Char(
-        "Barcode",
         compute="_compute_barcode",
     )
 
