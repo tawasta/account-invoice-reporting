@@ -19,7 +19,7 @@
 ##############################################################################
 
 {
-    "name": "Account Report Customer contact",
+    "name": "Invoice Report - Customer contact",
     "summary": "Show customer contact in invoice PDF",
     "version": "17.0.1.0.0",
     "category": "Reporting",
