@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
     <template id="report_invoice_document" inherit_id="account.report_invoice_document">
-        <xpath expr="//div[@class='row']" position="inside">
-            <div class="col-6" name="customer_contact" t-if="o.customer_contact_id">
-                <span t-field="o.customer_contact_id.name" id="customer-contact" />
-                <t t-if="o.customer_contact_id.phone">
-                    <br />
-                    <i class="fa fa-fw fa-phone" />
-                    <span
-                        t-if="o.customer_contact_id"
+        <xpath expr="//div[@id='informations']" position="inside">
+            <div
+                class="col-auto col-3 mw-100 mb-2"
+                t-if="o.customer_contact_id"
+                name="customer_contact"
+            >
+                <strong>Contact:</strong>
+                <p class="m-0" t-field="o.customer_contact_id.name" />
+                <p t-if="o.customer_contact_id.phone">
+                    <i class="fa fa-phone" /><span
                         t-field="o.customer_contact_id.phone"
-                        id="customer-contact-phone"
                     />
-                </t>
+                </p>
             </div>
         </xpath>
     </template>
