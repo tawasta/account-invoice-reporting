@@ -2,9 +2,9 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===============================
-Account Report Customer contact
-===============================
+=================================
+Invoice Report - Customer contact
+=================================
 
 Show customer contact in invoice PDF
 
@@ -28,6 +28,7 @@ Contributors
 
 * Jarmo Kortetjärvi <jarmo.kortetjarvi@tawasta.fi>
 * Kalle Rantalainen <kalle.rantalainen@futural.fi>
+* Timo Talvitie <timo.talvitie@futural.fi>
 
 Maintainer
 ----------
