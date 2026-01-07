@@ -11,7 +11,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[account_report_align_header_fields](account_report_align_header_fields/) | 17.0.1.0.1 |  | Align Invoice PDF report Header fields
+[account_report_align_header_fields](account_report_align_header_fields/) | 17.0.1.0.2 |  | Align Invoice PDF report Header fields
 [account_report_invoice_bank_transfer](account_report_invoice_bank_transfer/) | 17.0.1.0.1 |  | Add a bank transfer section for invoices
 [account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.2 |  | Show barcode in invoice PDF
 [account_report_invoice_business_code](account_report_invoice_business_code/) | 17.0.1.0.0 |  | Show business code in invoice PDF
