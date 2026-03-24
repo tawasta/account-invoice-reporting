@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- Determining the report title based on the type of invoice-->
+    <template
+        id="report_account_invoice_document_title"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//t[@t-set='o']" position="before">
+            <t t-set="report_title">
+                <t
+                    t-if="o.move_type in ['out_invoice', 'in_invoice']
+                        and not o.compute_downpayment_info()"
+                >
+                    Invoice
+                </t>
+                <t t-elif="o.compute_downpayment_info_dp()">
+                    Down payment
+                </t>
+
+                <t t-else="">Refund</t>
+                <span t-if="o.name != '/'" t-esc="o.name" />
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Adding invoice product lines to down payment invoice -->
+    <template
+        id="report_account_invoice_document_down_payment_product_lines"
+        inherit_id="account.report_invoice_document"
+    >
+        <!-- Insert after the invoice lines table -->
+        <xpath expr="//table[contains(@class, 'o_main_table')]" position="after">
+            <!-- Only show for down payment invoices -->
+            <t t-if="o.compute_downpayment_info()">
+                <t
+                    t-set="sale_orders"
+                    t-value="env['sale.order'].search([('name', '=', o.invoice_origin)])"
+                />
+                <table class="table table-sm mt-2">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th class="text-end">Quantity</th>
+                            <th class="text-end">Unit Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="sale_orders" t-as="so">
+                            <t t-foreach="so.order_line" t-as="line">
+                                <!-- Only show one down payment item in the list -->
+                                <tr t-if="not line.is_downpayment">
+                                    <td>
+                                        <span t-esc="line.name" />
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-esc="line.product_uom_qty" />
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-esc="line.price_unit" />
+                                    </td>
+                                </tr>
+                            </t>
+                        </t>
+                    </tbody>
+                </table>
+            </t>
+        </xpath>
+    </template>
+</odoo>
