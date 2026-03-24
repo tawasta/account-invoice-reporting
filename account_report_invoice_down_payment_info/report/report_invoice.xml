@@ -13,10 +13,9 @@
                 >
                     Invoice
                 </t>
-                <t t-elif="o.compute_downpayment_info_dp()">
+                <t t-elif="o.compute_downpayment_info()">
                     Down payment
                 </t>
-
                 <t t-else="">Refund</t>
                 <span t-if="o.name != '/'" t-esc="o.name" />
             </t>
