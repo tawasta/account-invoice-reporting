@@ -21,13 +21,13 @@
 {
     "name": "Account Report Invoice Down Payment Info",
     "summary": "Account report invoice down payment info",
-    "version": "17.0.1.0.0",
+    "version": "17.0.1.0.1",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account", "web_report_sfs"],
+    "depends": ["account", "sale", "web_report_sfs"],
     "data": ["report/report_invoice.xml"],
 }
