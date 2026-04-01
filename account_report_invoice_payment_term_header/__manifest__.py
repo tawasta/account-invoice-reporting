@@ -21,7 +21,7 @@
 {
     "name": "Account Report Payment Term in Header",
     "summary": "Show payment term in invoice header",
-    "version": "17.0.1.0.1",
+    "version": "17.0.1.0.2",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
