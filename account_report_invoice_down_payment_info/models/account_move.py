@@ -11,3 +11,7 @@ class AccountMove(models.Model):
             for line in self.invoice_line_ids
         )
         return invoice_downpayment
+
+    def compute_refund(self):
+        invoice_refund = any(line.is_refund for line in self.invoice_line_ids)
+        return invoice_refund

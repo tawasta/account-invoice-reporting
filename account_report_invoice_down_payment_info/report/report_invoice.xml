@@ -9,16 +9,36 @@
             <t t-set="report_title">
                 <t
                     t-if="o.move_type in ['out_invoice', 'in_invoice']
-                        and not o.compute_downpayment_info()"
+                        and not o.compute_downpayment_info()
+                        and not o.compute_refund()"
                 >
                     Invoice
                 </t>
-                <t t-elif="o.compute_downpayment_info()">
+                <t
+                    t-elif="o.compute_downpayment_info()
+                           and not o.compute_refund()"
+                >
                     Down payment
                 </t>
                 <t t-else="">Refund</t>
                 <span t-if="o.name != '/'" t-esc="o.name" />
             </t>
+        </xpath>
+    </template>
+
+    <!-- Change the h2 element -->
+    <template
+        id="report_account_invoice_document_h2element"
+        inherit_id="account.report_invoice_document"
+    >
+        <xpath expr="//h2" position="attributes">
+            <attribute name="t-if">False</attribute>
+        </xpath>
+
+        <xpath expr="//h2" position="after">
+            <h2>
+                <t t-esc="report_title" />
+            </h2>
         </xpath>
     </template>
 
