@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0-20260305\n"
+"Project-Id-Version: Odoo Server 17.0-20260324\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-23 12:44+0000\n"
-"PO-Revision-Date: 2026-03-23 12:44+0000\n"
+"POT-Creation-Date: 2026-04-08 11:54+0000\n"
+"PO-Revision-Date: 2026-04-08 11:54+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 #. module: account_report_invoice_down_payment_info
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
 msgid "Description"
-msgstr "Description"
+msgstr ""
 
 #. module: account_report_invoice_down_payment_info
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_title
@@ -29,6 +29,16 @@ msgstr "Facture d’acompte"
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_title
 msgid "Invoice"
 msgstr "Facture"
+
+#. module: account_report_invoice_down_payment_info
+#: model:ir.model,name:account_report_invoice_down_payment_info.model_account_move
+msgid "Journal Entry"
+msgstr "Écriture comptable"
+
+#. module: account_report_invoice_down_payment_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
+msgid "Price before taxes"
+msgstr "Prix ​​avant TVA"
 
 #. module: account_report_invoice_down_payment_info
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
@@ -42,5 +52,20 @@ msgstr "Remboursement"
 
 #. module: account_report_invoice_down_payment_info
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
+msgid "Total price"
+msgstr "Prix ​​total"
+
+#. module: account_report_invoice_down_payment_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
 msgid "Unit Price"
 msgstr "Prix unitaire"
+
+#. module: account_report_invoice_down_payment_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
+msgid "VAT %"
+msgstr "TVA %"
+
+#. module: account_report_invoice_down_payment_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_down_payment_info.report_account_invoice_document_down_payment_product_lines
+msgid "VAT Amount"
+msgstr "Montant de la TVA"

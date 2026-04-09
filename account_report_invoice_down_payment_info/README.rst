@@ -6,8 +6,9 @@
 Account Invoice Report - Down Payment Info
 ============================================
 
-For down payment invoices, changes the title of the .pdf to "Down payment". 
-Also adds a section to the invoice report showing the original order products.
+For down payment invoices where company is in France, changes the title of the .pdf 
+to "Down payment". Also adds a section to the invoice report showing the original 
+order products. 
 
 Configuration
 =============
@@ -15,7 +16,7 @@ Configuration
 
 Usage
 =====
-Just install the module and make an invoice that had down payment in the products 
+Just install the module and make an invoice that has down payment in the products 
 and make a down payment invoice from it. The down payment invoice should have 
 the title "Down payment" and show the original order products in a section after 
 the invoice lines.
