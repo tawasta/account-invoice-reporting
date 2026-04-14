@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+        <xpath expr="//address[@t-field='o.partner_id']" position="before">
+            <div style="margin-top: 10px;">
+                <strong>Customer address:</strong><br />
+                <span t-field="o.sale_partner_id.name" /><br />
+                <span t-field="o.sale_partner_id.street" /><br />
+                <span>
+                    <span t-field="o.sale_partner_id.zip" />
+                    <span t-field="o.sale_partner_id.city" />
+                </span><br />
+                <span t-field="o.sale_partner_id.country_id.name" />
+            </div>
+        </xpath>
+    </template>
+</odoo>
