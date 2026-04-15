@@ -36,7 +36,7 @@ addon | version | maintainers | summary
 [account_report_invoice_report_configurator](account_report_invoice_report_configurator/) | 17.0.1.0.0 |  | Central control for all account_report_invoice_* modules
 [account_report_invoice_sale_partner_id](account_report_invoice_sale_partner_id/) | 17.0.1.0.0 |  | Show customer in invoice PDF
 [account_report_invoice_salesperson](account_report_invoice_salesperson/) | 17.0.1.0.1 |  | Show salesperson in invoice PDF
-[account_report_invoice_show_customer_info](account_report_invoice_show_customer_info/) | 17.0.1.0.1 |  | Show Customer name, address and other info text in Invoice PDF print
+[account_report_invoice_show_customer_info](account_report_invoice_show_customer_info/) | 17.0.1.0.2 |  | Show Customer name, address and other info text in Invoice PDF print
 [account_report_invoice_show_invoice_address](account_report_invoice_show_invoice_address/) | 17.0.1.0.0 |  | Show Invoice address text above Customer info in Invoice PDF print
 [account_report_line_product_internal_reference](account_report_line_product_internal_reference/) | 17.0.1.0.0 |  | Add Internal reference for Invoice PDF print
 [account_report_show_duplicate_addresses](account_report_show_duplicate_addresses/) | 17.0.1.0.1 |  | Show delivery address even if it is same as invoicing address
