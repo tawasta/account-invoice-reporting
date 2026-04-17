@@ -29,5 +29,5 @@
     "application": False,
     "installable": True,
     "depends": ["account", "sale", "account_invoice_related_sale_order_customer"],
-    "data": ["report/report_invoice.xml"],
+    "data": ["report/report_invoice.xml", "views/res_config_settings_view.xml"],
 }
