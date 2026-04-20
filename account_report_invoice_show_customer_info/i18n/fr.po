@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_report_invoice_show_customer_info
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20260409\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-04-17 04:17+0000\n"
+"PO-Revision-Date: 2026-04-17 04:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_report_invoice_show_customer_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_show_customer_info.report_invoice_document
+msgid "<strong>Customer address:</strong><br/>"
+msgstr "<strong>Adresse du client:</strong><br/>"
+
+#. module: account_report_invoice_show_customer_info
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_show_customer_info.view_res_config_settings_inherit_customer_address
+msgid "If selected, shows customer address in the invoice report"
+msgstr "Si cette option est sélectionnée, l'adresse du client apparaîtra dans le rapport de facturation."
+
+#. module: account_report_invoice_show_customer_info
+#: model:ir.model,name:account_report_invoice_show_customer_info.model_res_config_settings
+msgid "Procurement purchase grouping settings"
+msgstr "Paramètres de configuration"
+
+#. module: account_report_invoice_show_customer_info
+#: model:ir.model.fields,field_description:account_report_invoice_show_customer_info.field_res_config_settings__show_customer_address
+msgid "Show customer address in invoice report"
+msgstr "Afficher l'adresse du client dans le rapport de facturation"

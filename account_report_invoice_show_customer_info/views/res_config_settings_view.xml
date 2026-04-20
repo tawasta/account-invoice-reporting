@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_res_config_settings_inherit_customer_address" model="ir.ui.view">
+        <field
+            name="name"
+        >res.config.settings.view.form.inherit.customer.address</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <block id="invoicing_settings" position="inside">
+                <setting
+                    id="invoice_report_show_customer_address"
+                    help="If selected, shows customer address in the invoice report"
+                >
+                    <field name="show_customer_address" />
+                </setting>
+            </block>
+
+        </field>
+    </record>
+</odoo>
