@@ -11,12 +11,16 @@ Show Customer name, address and other info text in Invoice PDF print
 Configuration
 =============
 - Use the settings toggle "Show customer address in invoice PDF"
- to enable showing the customer information in the invoice PDF.
-  The setting is found in Invoicing -> Configuration -> Settings.
+ to enable showing the customer information in the invoice PDF. 
+ Setting is found in the "Incoicing" section of the settings. 
+ If using multi-company setup, you need to enable the setting for 
+ each company separately.
 
 Usage
 =====
-- Install the module and the address will appear in the invoice PDF
+- Install the module
+- Enable the setting toggle
+- The address will appear in the invoice PDF
 
 Known issues / Roadmap
 ======================

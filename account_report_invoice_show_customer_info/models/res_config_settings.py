@@ -6,5 +6,6 @@ class ResConfigSettings(models.TransientModel):
 
     show_customer_address = fields.Boolean(
         string="Show customer address in invoice report",
-        config_parameter="account_report_invoice_show_customer_info.show_customer_address",
+        related="company_id.show_customer_address",
+        readonly=False,
     )

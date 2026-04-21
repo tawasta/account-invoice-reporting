@@ -21,7 +21,7 @@
 {
     "name": "Account Invoice PDF report - Show Customer Info",
     "summary": "Show Customer name, address and other info text in Invoice PDF print",
-    "version": "17.0.1.0.2",
+    "version": "17.0.1.0.3",
     "category": "Accounting & Finance",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",

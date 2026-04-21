@@ -2,9 +2,7 @@
 <odoo>
     <template id="report_invoice_document" inherit_id="account.report_invoice_document">
         <xpath expr="//address[@t-field='o.partner_id']" position="before">
-            <t
-                t-if="env['ir.config_parameter'].sudo().get_param('account_report_invoice_show_customer_info.show_customer_address')"
-            >
+            <t t-if="o.company_id.show_customer_address">
                 <div style="margin-bottom: 10px;">
 
                     <strong>Customer address:</strong><br />
