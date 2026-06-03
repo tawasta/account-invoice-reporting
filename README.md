@@ -30,6 +30,7 @@ addon | version | maintainers | summary
 [account_report_invoice_payment_reminder_template](account_report_invoice_payment_reminder_template/) | 17.0.1.0.1 |  | Invoice – Payment reminder PDF template
 [account_report_invoice_payment_term_header](account_report_invoice_payment_term_header/) | 17.0.1.0.2 |  | Show payment term in invoice header
 [account_report_invoice_payment_term_text](account_report_invoice_payment_term_text/) | 17.0.1.0.0 |  | Show 'Payment terms:' text on Invoice pdf print
+[account_report_invoice_price_decimal_precision](account_report_invoice_price_decimal_precision/) | 17.0.1.0.0 |  | Sets invoice lines' unit price as monetary field on the invoice PDF
 [account_report_invoice_quantity_decimals](account_report_invoice_quantity_decimals/) | 17.0.1.0.2 |  | Change the number of decimals shown on invoice PDF product quantities
 [account_report_invoice_receipt_template](account_report_invoice_receipt_template/) | 17.0.1.1.3 |  | Invoice – Receipt PDF template
 [account_report_invoice_reformat](account_report_invoice_reformat/) | 17.0.1.0.0 |  | Reformat invoice print elements for cleaner look
