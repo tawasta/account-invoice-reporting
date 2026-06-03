@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+
+        <xpath
+            expr="//table[@name='invoice_line_table']/tbody//td[@name='td_price_unit']/span[@t-field='line.price_unit']"
+            position="attributes"
+        >
+            <attribute
+                name="t-options"
+            >{'widget': 'monetary', 'display_currency': line.currency_id}</attribute>
+        </xpath>
+
+    </template>
+</odoo>
