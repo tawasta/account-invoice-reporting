@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_account_move_line_filter_partner_vat" model="ir.ui.view">
+        <field name="name">account.move.line.search.partner.vat</field>
+        <field name="model">account.move.line</field>
+        <field name="inherit_id" ref="account.view_account_move_line_filter" />
+        <field name="arch" type="xml">
+            <field name="partner_id" position="after">
+                <field name="partner_vat" />
+            </field>
+            <filter name="group_by_partner" position="after">
+                <filter
+                    string="Partner VAT"
+                    name="group_by_partner_vat"
+                    domain="[]"
+                    context="{'group_by': 'partner_vat'}"
+                />
+            </filter>
+        </field>
+    </record>
+</odoo>

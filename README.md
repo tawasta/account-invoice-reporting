@@ -40,6 +40,7 @@ addon | version | maintainers | summary
 [account_report_invoice_show_customer_info](account_report_invoice_show_customer_info/) | 17.0.1.0.2 |  | Show Customer name, address and other info text in Invoice PDF print
 [account_report_invoice_show_invoice_address](account_report_invoice_show_invoice_address/) | 17.0.1.0.0 |  | Show Invoice address text above Customer info in Invoice PDF print
 [account_report_line_product_internal_reference](account_report_line_product_internal_reference/) | 17.0.1.0.0 |  | Add Internal reference for Invoice PDF print
+[account_report_move_line_partner_vat](account_report_move_line_partner_vat/) | 17.0.1.0.0 |  | Group the Journal Items pivot report by partner VAT number
 [account_report_show_duplicate_addresses](account_report_show_duplicate_addresses/) | 17.0.1.0.1 |  | Show delivery address even if it is same as invoicing address
 [account_report_show_product](account_report_show_product/) | 17.0.1.0.0 |  | Always show product on invoice print lines
 [account_report_title](account_report_title/) | 17.0.1.0.0 |  | Report titles for account invoices
