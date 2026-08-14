@@ -35,6 +35,7 @@ addon | version | maintainers | summary
 [account_report_invoice_receipt_template](account_report_invoice_receipt_template/) | 17.0.1.1.3 |  | Invoice – Receipt PDF template
 [account_report_invoice_reformat](account_report_invoice_reformat/) | 17.0.1.0.0 |  | Reformat invoice print elements for cleaner look
 [account_report_invoice_report_configurator](account_report_invoice_report_configurator/) | 17.0.1.0.0 |  | Central control for all account_report_invoice_* modules
+[account_report_invoice_sale_order_customer_marking](account_report_invoice_sale_order_customer_marking/) | 17.0.1.0.0 |  | Show the related sale order(s)' customer marking on the invoice, next to the customer
 [account_report_invoice_sale_partner_id](account_report_invoice_sale_partner_id/) | 17.0.1.0.0 |  | Show customer in invoice PDF
 [account_report_invoice_salesperson](account_report_invoice_salesperson/) | 17.0.1.0.1 |  | Show salesperson in invoice PDF
 [account_report_invoice_show_customer_info](account_report_invoice_show_customer_info/) | 17.0.1.0.2 |  | Show Customer name, address and other info text in Invoice PDF print
