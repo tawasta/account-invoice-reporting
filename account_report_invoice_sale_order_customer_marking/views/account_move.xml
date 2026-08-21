@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="view_move_form_sale_order_customer_marking" model="ir.ui.view">
+    <field name="name">account.move.form.sale.order.customer.marking</field>
+    <field name="model">account.move</field>
+    <field
+      name="inherit_id"
+      ref="account_invoice_related_sale_order.view_move_form_related_sale_order"
+    />
+    <field name="arch" type="xml">
+      <field name="sale_id" position="after">
+        <field name="customer_marking" />
+      </field>
+    </field>
+  </record>
+</odoo>
