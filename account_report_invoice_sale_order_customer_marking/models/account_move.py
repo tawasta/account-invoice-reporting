@@ -12,10 +12,11 @@ class AccountMove(models.Model):
         "shown, comma-separated.",
     )
 
-    @api.depends("sale_order_ids.customer_marking")
+    @api.depends("invoice_line_ids.sale_line_ids.order_id.customer_marking")
     def _compute_customer_marking(self):
         for move in self:
-            markings = move.sale_order_ids.mapped("customer_marking")
+            orders = move.invoice_line_ids.sale_line_ids.order_id
+            markings = orders.mapped("customer_marking")
             unique_markings = list(
                 dict.fromkeys(marking for marking in markings if marking)
             )

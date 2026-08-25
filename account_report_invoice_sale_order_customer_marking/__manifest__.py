@@ -22,7 +22,7 @@
     "name": "Account Report Invoice: Sale Order Customer Marking",
     "summary": "Show the related sale order(s)' customer marking on the "
     "invoice, next to the customer",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
