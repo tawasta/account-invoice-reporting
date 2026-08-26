@@ -15,6 +15,7 @@ addon | version | maintainers | summary
 [account_report_invoice_bank_transfer](account_report_invoice_bank_transfer/) | 17.0.1.0.1 |  | Add a bank transfer section for invoices
 [account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.2 |  | Show barcode in invoice PDF
 [account_report_invoice_business_code](account_report_invoice_business_code/) | 17.0.1.0.0 |  | Show business code in invoice PDF
+[account_report_invoice_country_of_origin](account_report_invoice_country_of_origin/) | 17.0.1.0.0 |  | Show Country of origin on invoice PDF print
 [account_report_invoice_customer_contact](account_report_invoice_customer_contact/) | 17.0.1.0.0 |  | Show customer contact in invoice PDF
 [account_report_invoice_delivery_date](account_report_invoice_delivery_date/) | 17.0.1.0.0 |  | Adds Delivery date to invoice PDF print
 [account_report_invoice_eori](account_report_invoice_eori/) | 17.0.1.0.0 |  | Adds customer's EORI code to Account Invoice print
@@ -25,6 +26,7 @@ addon | version | maintainers | summary
 [account_report_invoice_hide_payment_communication](account_report_invoice_hide_payment_communication/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment communication under note
 [account_report_invoice_hide_payment_term_under_note](account_report_invoice_hide_payment_term_under_note/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment term under note
 [account_report_invoice_hide_tax_on_date](account_report_invoice_hide_tax_on_date/) | 17.0.1.0.0 |  | Hides tax on date info on invoice PDF print
+[account_report_invoice_hs_code](account_report_invoice_hs_code/) | 17.0.1.0.0 |  | Add HS code for Invoice PDF print
 [account_report_invoice_line_subtotal_with_tax](account_report_invoice_line_subtotal_with_tax/) | 17.0.1.0.0 |  | Include taxes in the subtotal of Invoice PDF print
 [account_report_invoice_payment](account_report_invoice_payment/) | 17.0.1.0.0 |  | Changes 'invoice' to 'receipt' for PDF print and email template
 [account_report_invoice_payment_reminder_template](account_report_invoice_payment_reminder_template/) | 17.0.1.0.1 |  | Invoice – Payment reminder PDF template
