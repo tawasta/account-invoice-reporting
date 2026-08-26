@@ -1,0 +1,51 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_report_optional_hs_and_coo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20250131\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-26 13:19+0000\n"
+"PO-Revision-Date: 2026-08-26 16:20+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#. module: account_report_optional_hs_and_coo
+#: model:ir.model.fields,field_description:account_report_optional_hs_and_coo.field_res_company__always_show_hs_code_and_coo
+#: model:ir.model.fields,field_description:account_report_optional_hs_and_coo.field_res_config_settings__always_show_hs_code_and_coo
+msgid "Always show HS code and Country Of Origin in invoice PDF"
+msgstr "Näytä aina HS koodit ja alkuperämaa laskun tulosteella"
+
+#. module: account_report_optional_hs_and_coo
+#: model:ir.model,name:account_report_optional_hs_and_coo.model_res_company
+msgid "Companies"
+msgstr "Yritykset"
+
+#. module: account_report_optional_hs_and_coo
+#: model_terms:ir.ui.view,arch_db:account_report_optional_hs_and_coo.res_config_settings_view_form
+msgid "Displays HS Code and Country Of Origin by default in invoice PDF print"
+msgstr "Näytä HS koodi ja alkuperämaa oletuksena laskun tulosteella"
+
+#. module: account_report_optional_hs_and_coo
+#: model:ir.model,name:account_report_optional_hs_and_coo.model_account_move
+msgid "Journal Entry"
+msgstr "Päiväkirjan kirjaus"
+
+#. module: account_report_optional_hs_and_coo
+#: model:ir.model,name:account_report_optional_hs_and_coo.model_res_config_settings
+msgid "Procurement purchase grouping settings"
+msgstr "Asetukset"
+
+#. module: account_report_optional_hs_and_coo
+#: model:ir.model.fields,field_description:account_report_optional_hs_and_coo.field_account_bank_statement_line__show_hs_code_and_coo
+#: model:ir.model.fields,field_description:account_report_optional_hs_and_coo.field_account_move__show_hs_code_and_coo
+#: model:ir.model.fields,field_description:account_report_optional_hs_and_coo.field_account_payment__show_hs_code_and_coo
+msgid "Show HS Codes and Country Of Origin in print"
+msgstr "Näytä HS koodit ja alkuperämaa laskun tulosteella"
