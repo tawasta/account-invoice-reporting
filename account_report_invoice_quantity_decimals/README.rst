@@ -30,6 +30,7 @@ Contributors
 ------------
 
 * Timo Kekäläinen <timo.kekalainen@tawasta.fi>
+* Joonas Lahtinen <joonas.lahtinen@futural.fi>
 
 Maintainer
 ----------
