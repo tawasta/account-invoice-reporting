@@ -22,6 +22,7 @@ msgstr "Päiväkirjamerkintä"
 
 #. module: account_report_invoice_sale_order_customer_marking
 #: model:ir.model.fields,field_description:account_report_invoice_sale_order_customer_marking.field_account_move__customer_marking
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_sale_order_customer_marking.report_invoice_document_sale_order_customer_marking
 msgid "Customer Marking"
 msgstr "Asiakasmerkki"
 
@@ -33,8 +34,3 @@ msgid ""
 msgstr ""
 "Liittyvien myyntitilausten asiakasmerkki(t). Jos myyntitilauksilla on eri "
 "asiakasmerkinnät, kaikki eri arvot näytetään pilkulla eroteltuna."
-
-#. module: account_report_invoice_sale_order_customer_marking
-#: model_terms:ir.ui.view,arch_db:account_report_invoice_sale_order_customer_marking.report_invoice_document_sale_order_customer_marking
-msgid "Customer Marking:"
-msgstr "Asiakasmerkki:"
