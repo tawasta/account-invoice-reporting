@@ -21,7 +21,7 @@
 {
     "name": "Account Report Invoice Bank Transfer",
     "summary": "Add a bank transfer section for invoices",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
