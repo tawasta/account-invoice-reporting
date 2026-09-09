@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+    <xpath
+      expr="//div[@name='address_not_same_as_shipping']//address"
+      position="before"
+    >
+      <strong name="o_invoice_address_text">Invoice address:</strong>
+    </xpath>
+    <xpath expr="//div[@name='address_same_as_shipping']//address" position="before">
+      <strong name="o_invoice_address_text">Invoice address:</strong>
+    </xpath>
+  </template>
+</odoo>
