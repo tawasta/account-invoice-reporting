@@ -1,1 +1,2 @@
 https://github.com/tawasta/account-invoicing/archive/refs/heads/19.0.zip#subdirectory=account_invoice_related_sale_order
+https://github.com/tawasta/sale-workflow/archive/refs/heads/19.0.zip#subdirectory=sale_order_customer_marking
