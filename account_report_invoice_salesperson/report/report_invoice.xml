@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+    <xpath expr="//div[@id='informations']" position="inside">
+      <div class="col-auto col-3 mw-100 mb-2" t-if="o.user_id" name="user_id">
+        <strong>Salesperson:</strong>
+        <p class="m-0" t-field="o.user_id.name" />
+        <t t-if="o.user_id.phone">
+          <i class="fa fa-fw fa-phone" />
+          <span t-field="o.user_id.phone" id="salesperson-phone" />
+        </t>
+      </div>
+    </xpath>
+  </template>
+</odoo>
