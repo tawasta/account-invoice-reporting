@@ -21,7 +21,7 @@
         name="payment_term"
       >
         <strong>Payment Terms:</strong>
-        <p class="m-0" t-field="o.invoice_payment_term_id.name" />
+        <p class="m-0" t-field="o.invoice_payment_term_id.note" />
       </div>
     </xpath>
   </template>
