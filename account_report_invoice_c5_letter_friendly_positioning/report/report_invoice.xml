@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo>
-  <!-- In invoice request the use of the C5-friendly address layout,
-  and fetch its offsets (in millimeters) -->
+  <!-- In invoice request the use of the C5-friendly address layout of
+  web_report_c5_letter_friendly_positioning, and fetch its offsets (in millimeters) -->
   <template id="report_invoice_document" inherit_id="account.report_invoice_document">
     <xpath expr="//t[@t-set='o']" position="before">
       <t t-set="use_c5_friendly_positioning" t-value="True" />
@@ -13,37 +13,6 @@
         t-set="c5_horizontal_offset"
         t-value="float(env['ir.config_parameter'].sudo().get_param('account_report_invoice_c5_letter_friendly_positioning.horizontal_offset', 0))"
       />
-    </xpath>
-  </template>
-
-  <!-- Add an alternative to the standard address block, used by all the external
-  layouts: the columns are flipped so that address is on the left -->
-  <template id="address_layout" inherit_id="web.address_layout">
-    <xpath expr="//div[@t-if='address']" position="before">
-      <!-- The block is shifted with relative positioning, as wkhtmltopdf trims the
-      top margin of the first element of the page. A positive vertical offset is
-      also added as bottom padding, to push the rest of the document down. -->
-      <div
-        t-if="address and use_c5_friendly_positioning"
-        class="address row mb-4"
-        t-att-style="'position: relative; top: %.2fmm; padding-bottom: %.2fmm' % (c5_vertical_offset, max(c5_vertical_offset, 0)) if c5_vertical_offset else None"
-      >
-        <div
-          name="address"
-          class="col-6"
-          t-att-style="'position: relative; left: %.2fmm' % c5_horizontal_offset if c5_horizontal_offset else None"
-        >
-          <t t-out="address" />
-        </div>
-        <div t-if="information_block" name="information_block" class="col-5 offset-1">
-          <t t-out="information_block" />
-        </div>
-      </div>
-    </xpath>
-    <!-- The standard block becomes the fallback -->
-    <xpath expr="//div[@t-if='address']" position="attributes">
-      <attribute name="t-if" />
-      <attribute name="t-elif">address</attribute>
     </xpath>
   </template>
 </odoo>

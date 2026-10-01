@@ -21,13 +21,13 @@
 {
     "name": "Account Report Invoice: C5-friendly Positioning",
     "summary": "Position recipient text so that it aligns with C5 letter window",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.1.0",
     "category": "Reporting",
     "website": "https://github.com/tawasta/account-invoice-reporting",
     "author": "Futural",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
-    "depends": ["account"],
+    "depends": ["account", "web_report_c5_letter_friendly_positioning"],
     "data": ["report/report_invoice.xml", "views/res_config_settings.xml"],
 }
