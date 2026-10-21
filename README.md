@@ -15,6 +15,7 @@ addon | version | maintainers | summary
 [account_report_invoice_bank_transfer](account_report_invoice_bank_transfer/) | 17.0.1.0.1 |  | Add a bank transfer section for invoices
 [account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.2 |  | Show barcode in invoice PDF
 [account_report_invoice_business_code](account_report_invoice_business_code/) | 17.0.1.0.0 |  | Show business code in invoice PDF
+[account_report_invoice_c5_letter_friendly_positioning](account_report_invoice_c5_letter_friendly_positioning/) | 17.0.1.0.0 |  | Position recipient text so that it aligns with C5 letter window
 [account_report_invoice_customer_contact](account_report_invoice_customer_contact/) | 17.0.1.0.0 |  | Show customer contact in invoice PDF
 [account_report_invoice_delivery_date](account_report_invoice_delivery_date/) | 17.0.1.0.0 |  | Adds Delivery date to invoice PDF print
 [account_report_invoice_eori](account_report_invoice_eori/) | 17.0.1.0.0 |  | Adds customer's EORI code to Account Invoice print
