@@ -16,6 +16,7 @@ addon | version | maintainers | summary
 [account_report_invoice_barcode](account_report_invoice_barcode/) | 17.0.1.0.2 |  | Show barcode in invoice PDF
 [account_report_invoice_business_code](account_report_invoice_business_code/) | 17.0.1.0.0 |  | Show business code in invoice PDF
 [account_report_invoice_c5_letter_friendly_positioning](account_report_invoice_c5_letter_friendly_positioning/) | 17.0.1.0.0 |  | Position recipient text so that it aligns with C5 letter window
+[account_report_invoice_country_of_origin](account_report_invoice_country_of_origin/) | 17.0.1.0.0 |  | Show Country of origin on invoice PDF print
 [account_report_invoice_customer_contact](account_report_invoice_customer_contact/) | 17.0.1.0.0 |  | Show customer contact in invoice PDF
 [account_report_invoice_delivery_date](account_report_invoice_delivery_date/) | 17.0.1.0.0 |  | Adds Delivery date to invoice PDF print
 [account_report_invoice_eori](account_report_invoice_eori/) | 17.0.1.0.0 |  | Adds customer's EORI code to Account Invoice print
@@ -26,11 +27,13 @@ addon | version | maintainers | summary
 [account_report_invoice_hide_payment_communication](account_report_invoice_hide_payment_communication/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment communication under note
 [account_report_invoice_hide_payment_term_under_note](account_report_invoice_hide_payment_term_under_note/) | 17.0.1.0.1 |  | Invoice PDF – Hide payment term under note
 [account_report_invoice_hide_tax_on_date](account_report_invoice_hide_tax_on_date/) | 17.0.1.0.0 |  | Hides tax on date info on invoice PDF print
+[account_report_invoice_hs_code](account_report_invoice_hs_code/) | 17.0.1.0.0 |  | Add HS code for Invoice PDF print
 [account_report_invoice_line_subtotal_with_tax](account_report_invoice_line_subtotal_with_tax/) | 17.0.1.0.0 |  | Include taxes in the subtotal of Invoice PDF print
 [account_report_invoice_payment](account_report_invoice_payment/) | 17.0.1.0.0 |  | Changes 'invoice' to 'receipt' for PDF print and email template
 [account_report_invoice_payment_reminder_template](account_report_invoice_payment_reminder_template/) | 17.0.1.0.1 |  | Invoice – Payment reminder PDF template
 [account_report_invoice_payment_term_header](account_report_invoice_payment_term_header/) | 17.0.1.0.2 |  | Show payment term in invoice header
 [account_report_invoice_payment_term_text](account_report_invoice_payment_term_text/) | 17.0.1.0.0 |  | Show 'Payment terms:' text on Invoice pdf print
+[account_report_invoice_portal_no_proforma_if_already_confirmed](account_report_invoice_portal_no_proforma_if_already_confirmed/) | 17.0.1.0.0 |  | Show posted invoices in portal without the PROFORMA prefix
 [account_report_invoice_price_decimal_precision](account_report_invoice_price_decimal_precision/) | 17.0.1.0.0 |  | Sets invoice lines' unit price as monetary field on the invoice PDF
 [account_report_invoice_quantity_decimals](account_report_invoice_quantity_decimals/) | 17.0.1.0.2 |  | Change the number of decimals shown on invoice PDF product quantities
 [account_report_invoice_receipt_template](account_report_invoice_receipt_template/) | 17.0.1.1.3 |  | Invoice – Receipt PDF template
@@ -43,6 +46,7 @@ addon | version | maintainers | summary
 [account_report_invoice_show_invoice_address](account_report_invoice_show_invoice_address/) | 17.0.1.0.0 |  | Show Invoice address text above Customer info in Invoice PDF print
 [account_report_line_product_internal_reference](account_report_line_product_internal_reference/) | 17.0.1.0.0 |  | Add Internal reference for Invoice PDF print
 [account_report_move_line_partner_vat](account_report_move_line_partner_vat/) | 17.0.1.0.0 |  | Group the Journal Items pivot report by partner VAT number
+[account_report_optional_hs_and_coo](account_report_optional_hs_and_coo/) | 17.0.1.0.0 |  | Optional HS code and Country of Origin in Invoice PDF
 [account_report_show_duplicate_addresses](account_report_show_duplicate_addresses/) | 17.0.1.0.1 |  | Show delivery address even if it is same as invoicing address
 [account_report_show_product](account_report_show_product/) | 17.0.1.0.0 |  | Always show product on invoice print lines
 [account_report_title](account_report_title/) | 17.0.1.0.0 |  | Report titles for account invoices
