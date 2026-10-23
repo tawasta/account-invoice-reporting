@@ -6,21 +6,8 @@
 Account Invoice Report - Down Payment Title and Lines
 ======================================================
 
-Intended for customers who invoice down payments from sales orders and need the
-resulting PDF to say so.
-
-* Titles a down payment invoice "Down payment" in the document title and in the
-  PDF page header. Core titles it "Invoice", because a down payment invoice is a
-  normal customer invoice for core.
-
-* Lists the ordered products of the sales order below the invoice totals. Core
-  only prints the down payment line itself, so the customer cannot see what the
-  payment is for.
-
-The invoice is recognised as a down payment invoice with core's own
-``_is_downpayment()``, i.e. every sales order line behind the invoice lines is a
-down payment line. A final invoice that deducts an earlier down payment keeps its
-normal title.
+Changes the title of down payment invoices to "Down payment" and lists 
+the ordered products under the totals.
 
 Configuration
 =============
