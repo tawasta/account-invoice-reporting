@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <!-- A down payment invoice is a normal customer invoice for core, so both the
+         page header and the document title say "Invoice". Core also only lists the
+         down payment line itself, hiding what the payment is actually for. -->
+
+    <!-- PDF page header title, consumed by web_report_sfs -->
+    <template
+        id="report_invoice_document_downpayment_header_title"
+        inherit_id="account.report_invoice_document"
+        priority="30"
+    >
+        <xpath expr="//t[@t-set='o']" position="before">
+            <t t-if="o._is_downpayment_invoice()">
+                <t t-set="report_title" t-value="o._get_report_invoice_title()" />
+            </t>
+        </xpath>
+    </template>
+
+    <!-- Document title: reuse core's own span, so the draft, cancelled, proforma and
+         credit note titles are left untouched -->
+    <template
+        id="report_invoice_document_downpayment_title"
+        inherit_id="account.report_invoice_document"
+        priority="30"
+    >
+        <xpath
+            expr='//h2/span[@t-if="o.move_type == &apos;out_invoice&apos; and o.state == &apos;posted&apos;"]'
+            position="attributes"
+        >
+            <attribute name="t-out">o._get_report_invoice_title()</attribute>
+        </xpath>
+    </template>
+
+    <!-- Ordered products of the sale order the down payment was invoiced from -->
+    <template
+        id="report_invoice_document_downpayment_order_lines"
+        inherit_id="account.report_invoice_document"
+        priority="30"
+    >
+        <xpath expr="//div[@id='right-elements']" position="after">
+            <t t-if="o._is_downpayment_invoice()">
+                <t t-foreach="o._get_report_invoice_orders()" t-as="order">
+                    <t
+                        t-set="order_lines"
+                        t-value="o._get_report_invoice_order_lines(order)"
+                    />
+                    <!-- clear: both, because the totals column above is floated right -->
+                    <div t-if="order_lines" class="mt-4" style="clear: both;">
+                        <p class="mb-1">
+                            <strong>Original order:</strong>
+                            <span t-field="order.name" />
+                        </p>
+                        <table
+                            class="table table-sm table-borderless"
+                            name="downpayment_order_line_table"
+                        >
+                            <thead>
+                                <tr>
+                                    <th
+                                        name="th_order_description"
+                                        class="text-start"
+                                    >Description</th>
+                                    <th
+                                        name="th_order_quantity"
+                                        class="text-end"
+                                    >Quantity</th>
+                                    <th
+                                        name="th_order_priceunit"
+                                        class="text-end"
+                                    >Unit Price</th>
+                                    <th
+                                        name="th_order_taxes"
+                                        class="text-end"
+                                    >Taxes</th>
+                                    <th
+                                        name="th_order_subtotal"
+                                        class="text-end"
+                                    >Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="order_lines" t-as="line">
+                                    <t
+                                        t-set="order_line_taxes"
+                                        t-value="', '.join([(tax.invoice_label or tax.name) for tax in line.tax_id])"
+                                    />
+                                    <td name="td_order_line_name">
+                                        <span
+                                            t-field="line.name"
+                                            t-options="{'widget': 'text'}"
+                                            dir="auto"
+                                        />
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="line.product_uom_qty" />
+                                    </td>
+                                    <td class="text-end">
+                                        <span
+                                            class="text-nowrap"
+                                            t-out="line.price_unit"
+                                            t-options='{"widget": "monetary", "display_currency": order.currency_id}'
+                                        />
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-out="order_line_taxes" />
+                                    </td>
+                                    <td class="text-end o_price_total">
+                                        <span
+                                            class="text-nowrap"
+                                            t-out="line.price_subtotal"
+                                            t-options='{"widget": "monetary", "display_currency": order.currency_id}'
+                                        />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </xpath>
+    </template>
+
+</odoo>
