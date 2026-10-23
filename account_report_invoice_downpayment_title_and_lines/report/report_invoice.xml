@@ -49,9 +49,8 @@
                     <!-- clear: both, because the totals column above is floated right -->
                     <div t-if="order_lines" class="mt-4" style="clear: both;">
                         <p class="mb-1">
-                            <strong>Original order</strong>: <span
-                                t-field="order.name"
-                            />
+                            <strong>Original order:</strong>
+                            <span t-field="order.name" />
                         </p>
                         <table
                             class="table table-sm table-borderless"
