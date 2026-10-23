@@ -59,3 +59,8 @@ msgstr "Verot"
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_downpayment_title_and_lines.report_invoice_document_downpayment_order_lines
 msgid "Unit Price"
 msgstr "Yksikköhinta"
+
+#. module: account_report_invoice_downpayment_title_and_lines
+#: model_terms:ir.ui.view,arch_db:account_report_invoice_downpayment_title_and_lines.report_invoice_document_downpayment_order_lines
+msgid "<strong>Original order</strong>:"
+msgstr "<strong>Alkuperäinen tilaus</strong>:"
