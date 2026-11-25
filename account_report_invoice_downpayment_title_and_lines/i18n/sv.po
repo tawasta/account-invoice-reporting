@@ -30,6 +30,13 @@ msgstr "Beskrivning"
 #. odoo-python
 #: code:addons/account_report_invoice_downpayment_title_and_lines/models/account_move.py:0
 #, python-format
+msgid "Credit Note"
+msgstr "Kreditfaktura"
+
+#. module: account_report_invoice_downpayment_title_and_lines
+#. odoo-python
+#: code:addons/account_report_invoice_downpayment_title_and_lines/models/account_move.py:0
+#, python-format
 msgid "Down payment"
 msgstr "Delbetalning"
 
