@@ -14,7 +14,11 @@ class AccountMove(models.Model):
         self.ensure_one()
         if self._is_downpayment_invoice():
             return _("Down payment")
-        return _("Invoice")
+        if self.move_type in ("out_invoice", "out_receipt"):
+            return _("Invoice")
+        if self.move_type == "out_refund":
+            return _("Credit Note")
+        return None
 
     def _get_report_invoice_orders(self):
         """Return the sale orders this invoice was generated from."""

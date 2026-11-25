@@ -5,16 +5,20 @@
          page header and the document title say "Invoice". Core also only lists the
          down payment line itself, hiding what the payment is actually for. -->
 
-    <!-- PDF page header title, consumed by web_report_sfs -->
+    <!-- PDF page header title, consumed by web_report_sfs. Set after core's
+         t-set="o" so the record carries the invoice language, without which the
+         Python translations above would stay in the user's language. Keeps a
+         report_title set by another report (receipt, reminder) intact. -->
     <template
         id="report_invoice_document_downpayment_header_title"
         inherit_id="account.report_invoice_document"
         priority="30"
     >
-        <xpath expr="//t[@t-set='o']" position="before">
-            <t t-if="o._is_downpayment_invoice()">
-                <t t-set="report_title" t-value="o._get_report_invoice_title()" />
-            </t>
+        <xpath expr="//t[@t-set='o']" position="after">
+            <t
+                t-set="report_title"
+                t-value="report_title or o._get_report_invoice_title()"
+            />
         </xpath>
     </template>
 

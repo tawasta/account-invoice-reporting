@@ -30,6 +30,13 @@ msgstr "Description"
 #. odoo-python
 #: code:addons/account_report_invoice_downpayment_title_and_lines/models/account_move.py:0
 #, python-format
+msgid "Credit Note"
+msgstr "Avoir"
+
+#. module: account_report_invoice_downpayment_title_and_lines
+#. odoo-python
+#: code:addons/account_report_invoice_downpayment_title_and_lines/models/account_move.py:0
+#, python-format
 msgid "Down payment"
 msgstr "Facture d’acompte"
 
@@ -53,7 +60,7 @@ msgstr "Quantité"
 #. module: account_report_invoice_downpayment_title_and_lines
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_downpayment_title_and_lines.report_invoice_document_downpayment_order_lines
 msgid "Taxes"
-msgstr "Taxes"
+msgstr "TVA %"
 
 #. module: account_report_invoice_downpayment_title_and_lines
 #: model_terms:ir.ui.view,arch_db:account_report_invoice_downpayment_title_and_lines.report_invoice_document_downpayment_order_lines
